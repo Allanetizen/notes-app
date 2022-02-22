@@ -1,14 +1,19 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button"
+import Container from '@mui/material/Container'
 
 export default function Create() {
   return (
-    <div>
+    <Container>
     
       <Typography variant ="h6" color ="textSecondary" component = "h2" gutterBottom>
-        Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit
-        
+Create a New Note        
       </Typography>
-    </div>
-  );
+      <Button onClick={()=>console.log('You clicked me!')}
+              type ="submit" 
+              color= "secondary" 
+              variant = "contained">Submit</Button>
+    </Container>
+  ); 
 }
